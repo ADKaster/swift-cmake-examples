@@ -3,7 +3,7 @@
 
 namespace library {
 struct Version {
-  int major;
+  char8_t major;
   int minor;
   int patch;
 };

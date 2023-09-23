@@ -1,5 +1,5 @@
 add_executable(E
-  E.swift)
+  main.swift)
 target_compile_options(E PRIVATE
   -cxx-interoperability-mode=default)
 target_link_libraries(E PRIVATE
