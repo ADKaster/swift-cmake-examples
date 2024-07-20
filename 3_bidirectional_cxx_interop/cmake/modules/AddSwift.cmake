@@ -66,7 +66,7 @@ function(_swift_generate_cxx_header target header)
     COMMAND_EXPAND_LISTS)
 
   # Added to public interface for dependees to find.
-  target_include_directories(${target} PUBLIC ${base_path})
+  target_include_directories(${target} PUBLIC $<BUILD_INTERFACE:${base_path}>)
   # Added to the target to ensure target rebuilds if header changes and is used
   # by sources in the target.
   target_sources(${target} PRIVATE ${header_path})
